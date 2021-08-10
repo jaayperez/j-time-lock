@@ -58,7 +58,7 @@ $(window).load(function(){
 /* ------------------------------------- */
 
 /* Thanks to CSS Tricks for pointing out this bit of jQuery
-http://css-tricks.com/equal-height-blocks-in-rows/
+https://css-tricks.com/equal-height-blocks-in-rows/
 It's been modified into a function called at page load and then each time the page is resized. One large modification was to remove the set height before each new calculation. */
 
 equalheight = function(container){
