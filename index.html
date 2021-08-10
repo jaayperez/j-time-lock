@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="J">
+	<meta name="description" content="A full on opener as the future of perfect and most awesome is present
+		to hook people with one to zero(s) attention.">
+	<title>J ZERO TIME LOCK</title>
+
+	<!-- ================= Favicon ================== -->
+	<!-- Standard -->
+	<link rel="shortcut icon" href="img/j-favicon.png">
+	<!-- Retina iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<!-- Retina iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<!-- Standard iPad Touch Icon-->
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<!-- Standard iPhone Touch Icon-->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<!-- ============== Resources style ============== -->
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Flaticon CDN -->
+	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+
+	<!-- Modernizr runs quickly on page load to detect features -->
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="output" class="back-fss"></div>
+	</div>
+
+	<!-- Page preloader -->
+	<div id="loading">
+		<div id="preloader">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+
+	<!-- START - Home part -->
+	<div class="outer-home">
+
+		<!-- START - Home section -->
+		<section id="home">
+
+			<!-- Overlay -->
+			<div class="global-overlay"></div>
+
+
+			<!-- START - Content -->
+			<div class="text-center content">
+
+				<!-- Your logo -->
+				<img src="img/j.png" alt="J" class="mb-5 brand-logo text-intro opacity-0" />
+
+				<h1 class="font-monospace text-intro opacity-0">J ZERO TIME LOCK</h1>
+
+				<p class="text-intro opacity-0">A full on opener as the future of perfect and most awesome is present<br>
+					to hook people with one and zero(s) attention.</p>
+
+					<!-- Lockscreen -->
+					<button class="mx-auto font-monospace light-btn text-intro opacity-0" id="lock" onclick="screenLock()">LOCK ON</button>
+					<!-- <a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">J Advise!</a> -->
+
+			</div>
+
+			<!-- END - Content -->
+
+			<!-- START - Bottom home -->
+			<div class="bottom-home">
+
+				<!-- Social icons, replace # by your links -->
+				<div class="social-icons">
+
+					<a href="https://github.com/jaayperez/" target="_blank"><i class="fa fa-github"></i></a>
+					<!-- <br class="d-sm-none d-md-none d-lg-block" /> -->
+					<!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+					<!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+					<a href="https://www.linkedin.com/in/jjustinperez/" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+				</div>
+
+				<p class="copyright">
+					© <a class="font-monospace mx-1" href="/">LOCK N' ROLL</a> - Made for Awesome People.
+					<br class="d-block d-sm-none" />
+					Designed by <a class="font-monospace mx-1" href="https://github.com/sponsors/jaayperez" target="_blank">J</a>
+				</p>
+
+			</div>
+			<!-- END - Bottom home -->
+
+		</section>
+		<!-- END - Home section -->
+
+	</div>
+	<!-- END - Home part -->
+
+
+	<div class="locks-on unlock">
+		<div class="profile">
+			<img src="img/j.png" alt="J" />
+			<!-- <span class="profile__name">J</span> -->
+		</div>
+		<i class="fi-rr-lock" ondblclick="screenUnlock()"></i>
+
+		<div class="text-center time">
+			<p class="py-5 font-monospace date" id="freeze"></p>
+			<span class="clock"></span>
+		</div>
+	</div>
+
+
+	<!-- /////////////////// \\\\\\\\\\\\\\\\\\\ -->
+	<!-- ********** Resource($) jQuery ********** -->
+	<!-- \\\\\\\\\\\\\\\\\\\ /////////////////// -->
+
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	<!-- Flee Date -->
+	<script>
+		const d = new Date();
+		document.getElementById("freeze").innerHTML = d;
+	</script>
+
+	<!-- Flat Surface Shader colors -->
+	<script>
+		let ambient_value = '#1F222E'; // ambient color
+		let diffuse_value = '#2B2D35'; // diffuse color
+	</script>
+
+	<!-- Flat Surface Shader effect -->
+	<script src="js/fss.js"></script>
+	<script src="js/custom-fss.js"></script>
+
+	<script src="js/lock-on.js"></script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
